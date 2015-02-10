@@ -13,7 +13,8 @@ function initChart() {
             argumentField: 'activity_date',
             point: {
                 visible: false
-            }
+            },
+            type: 'line'
         },
         valueAxis: [
             { 
@@ -28,14 +29,12 @@ function initChart() {
         series: [{
             name: 'GMV',
             valueField: 'gmv',
-            axis: 'gmv',
-            type: 'line'
+            axis: 'gmv'
         },
         {
             name: 'listing fees',
             valueField: 'listingfees',
-            axis: 'listingfees',
-            type: 'line'
+            axis: 'listingfees'
         }]
     });
 }
